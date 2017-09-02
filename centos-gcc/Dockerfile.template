@@ -1,0 +1,7 @@
+FROM {{ BASE_IMAGE }}
+
+RUN yum install -y \
+        make \
+        gcc \
+        gcc-c++ \
+    && yum clean all
